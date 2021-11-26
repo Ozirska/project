@@ -54,7 +54,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    margin-top: 36px;
+    margin-top: 33px;
 
     &-text {
       font-size: 20px;
@@ -144,6 +144,7 @@ body {
   line-height: 17px;
   color: #fff;
   text-transform: uppercase;
+  border: none;
 }
 .basic-batton {
   background-color: $basic-color;
