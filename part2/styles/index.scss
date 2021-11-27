@@ -31,6 +31,7 @@ body {
   &_busines {
     overflow: hidden;
     position: relative;
+
     &-decoration {
       position: absolute;
       top: 31px;
@@ -63,21 +64,19 @@ body {
       margin: 0;
     }
   }
-}
-
-.price-card__price {
-  width: 100%;
-  height: 105px;
-  margin: 0;
-  margin-top: 33px;
-  padding: 19px 110px;
-
-  &_item {
-    font-size: 55px;
-    line-height: 67px;
-    font-weight: 700;
-
+  &__price {
+    width: 100%;
+    height: 105px;
     margin: 0;
+    margin-top: 33px;
+    padding: 19px 110px;
+
+    &_item {
+      font-size: 55px;
+      line-height: 67px;
+      font-weight: 700;
+      margin: 0;
+    }
   }
 }
 
@@ -111,7 +110,7 @@ body {
   list-style-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
 }
 
-.list {
+.price-card__options-list {
   list-style-position: inside;
   width: 380px;
   font-size: 15px;
@@ -119,18 +118,16 @@ body {
   font-weight: 300;
   margin: 0;
   margin-top: 40px;
-
   padding: 0;
+}
+.list_item {
+  vertical-align: middle;
+  line-height: 50px;
+  padding: 0;
+  padding-left: 22px;
 
-  &_item {
-    vertical-align: middle;
-    line-height: 50px;
-    padding: 0;
-    padding-left: 22px;
-
-    &:nth-child(odd) {
-      background-color: rgba(42, 52, 56, 0.5);
-    }
+  &:nth-child(odd) {
+    background-color: rgba(42, 52, 56, 0.5);
   }
 }
 .button {
