@@ -1,0 +1,80 @@
+@import "variables.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  margin-left: 80px;
+  margin-top: 40px;
+
+  @include for-large-up {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 160px;
+  }
+
+  &_button {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      width: 180px;
+      height: 50px;
+      background-color: $button-color__blue;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+
+      color: $text-color__white;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-right: 220px;
+
+  &_img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  &_text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $text-color__primary-blue;
+    margin: 0;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include for-large-up {
+    display: block;
+
+    // margin-left: auto;
+  }
+  &-list {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+
+    &_item {
+      font-size: 14px;
+      line-height: 50px;
+      color: #000;
+      width: 120px;
+      height: 50px;
+
+      &:last-child {
+        width: 180px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
