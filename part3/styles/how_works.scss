@@ -67,13 +67,13 @@
   @include for-large-down {
     min-width: 520px;
     height: 180px;
-    padding: 40px;
     margin: 0;
   }
 
   @include for-large-up {
     max-width: 320px;
     height: 220px;
+    padding: 40px;
   }
   &_for_up {
     @include for-large-up {
