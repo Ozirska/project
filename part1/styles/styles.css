@@ -89,14 +89,14 @@
     position: relative;
     width: 1140px;
     margin: auto;
+    margin-top: 81px;
     display: flex;
     padding-bottom: 126px;
   }
 }
 .headline_content {
   margin: 0;
-  padding-bottom: 0;
-  padding: 0 15px;
+  padding: 35px 15px 33px 15px;
 }
 @media screen and (min-width: 400px) {
   .headline_content {
@@ -701,7 +701,6 @@
 }
 
 .inbox {
-  width: 100%;
   background-color: rgba(252, 240, 227, 0.4);
   margin-top: 50px;
   padding-left: 15px;
@@ -710,7 +709,6 @@
 }
 @media screen and (min-width: 400px) {
   .inbox {
-    width: 1140px;
     padding-bottom: 99px;
     padding-top: 142px;
     display: flex;
@@ -846,6 +844,7 @@
   line-height: 40px;
   letter-spacing: -0.36px;
   font-weight: 700;
+  margin: 0;
   margin-top: 17px;
 }
 .communication_column-description {
@@ -861,6 +860,11 @@
   margin-right: auto;
   margin-top: 40px;
   opacity: 0.1;
+}
+@media screen and (min-width: 400px) {
+  .communication-line {
+    display: none;
+  }
 }
 
 .form-communication {
@@ -897,6 +901,7 @@
 }
 
 .audiences {
+  background-color: rgba(0, 161, 198, 0.07);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -908,10 +913,6 @@
     padding: 108px 0 110px 0;
     width: 1400px;
   }
-}
-
-.audiences {
-  background-color: rgba(0, 161, 198, 0.07);
 }
 .audiences_subtitle {
   font-size: 22px;
@@ -950,9 +951,12 @@
 .audiences_button {
   margin: 0;
   margin-top: 30px;
+  width: 100%;
+  height: 48px;
 }
 @media screen and (min-width: 400px) {
   .audiences_button {
+    width: max-content;
     margin-top: 51px;
   }
 }
@@ -960,7 +964,7 @@
 .ilustration {
   width: 100%;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 @media screen and (min-width: 400px) {
   .ilustration {
@@ -1010,6 +1014,7 @@
 }
 
 .audiences {
+  background-color: rgba(0, 161, 198, 0.07);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1021,10 +1026,6 @@
     padding: 108px 0 110px 0;
     width: 1400px;
   }
-}
-
-.audiences {
-  background-color: rgba(0, 161, 198, 0.07);
 }
 .audiences_subtitle {
   font-size: 22px;
@@ -1063,9 +1064,12 @@
 .audiences_button {
   margin: 0;
   margin-top: 30px;
+  width: 100%;
+  height: 48px;
 }
 @media screen and (min-width: 400px) {
   .audiences_button {
+    width: max-content;
     margin-top: 51px;
   }
 }
@@ -1073,7 +1077,7 @@
 .ilustration {
   width: 100%;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 @media screen and (min-width: 400px) {
   .ilustration {
@@ -1120,6 +1124,263 @@
   margin: auto;
   margin-top: 40px;
   text-align: center;
+}
+
+.feedback {
+  padding: 35px 15px 0 15px;
+}
+@media screen and (min-width: 400px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+}
+.feedback_title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3142c6;
+}
+.feedback_text {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+@media screen and (min-width: 400px) {
+  .feedback_text {
+    width: 750px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+}
+.feedback_ilustration {
+  margin: 0;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 400px) {
+  .feedback_ilustration {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+  }
+}
+.feedback_under-line {
+  margin: 0;
+  background-color: #e3e3e3;
+}
+
+.qoute {
+  margin: 0;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 400px) {
+  .qoute {
+    text-align: center;
+  }
+}
+.qoute_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.qoute_position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+.circle {
+  width: 75px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 400px) {
+  .circle {
+    margin-bottom: 66px;
+  }
+}
+.circle_item {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #2b292d;
+  opacity: 0.2;
+}
+.circle_item-selected {
+  background-color: #3142c5;
+  opacity: 1;
+}
+
+.hiring {
+  padding: 0 15px;
+}
+@media screen and (min-width: 400px) {
+  .hiring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 106px auto 110px auto;
+    max-width: 750px;
+  }
+}
+.hiring_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.357143px;
+}
+@media screen and (min-width: 400px) {
+  .hiring_title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+.hiring_text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .hiring_text {
+    margin-top: 20px;
+    width: 555px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hiring_button {
+    width: 247px;
+    height: 48px;
+  }
+}
+.hiring_button-container {
+  margin-bottom: 39px;
+}
+@media screen and (min-width: 400px) {
+  .hiring_button-container {
+    margin-bottom: 110px;
+  }
+}
+
+.icon-arrow-right {
+  display: block;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+  width: 7px;
+  height: 12px;
+  margin: auto;
+}
+@media screen and (min-width: 400px) {
+  .icon-arrow-right {
+    margin-top: 35px;
+    margin-right: 24px;
+  }
+}
+
+.vacancy {
+  border-radius: 8px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  display: flex;
+  text-decoration: none;
+  color: #2b292d;
+  overflow: hidden;
+  height: 140px;
+}
+.vacancy_container {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  flex-direction: column;
+}
+@media screen and (min-width: 400px) {
+  .vacancy_container {
+    height: 283px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .vacancy {
+    width: 750px;
+    height: 81px;
+  }
+}
+.vacancy:hover {
+  background-color: #3141c5;
+}
+.vacancy:hover .vacancy_title {
+  color: #fff;
+}
+.vacancy:hover .vacancy_location {
+  color: #fff;
+}
+.vacancy:hover .vacancy_arrow-container {
+  background-color: transparent;
+}
+.vacancy:hover .icon-arrow-right {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+}
+.vacancy_details {
+  padding: 20px;
+  flex: 1;
+}
+@media screen and (min-width: 400px) {
+  .vacancy_details {
+    display: flex;
+    align-items: center;
+  }
+}
+.vacancy_arrow-container {
+  background-color: #d5d4d5;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+@media screen and (min-width: 400px) {
+  .vacancy_arrow-container {
+    background-color: #fff;
+  }
+}
+
+.vacancy_title {
+  width: 200px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+@media screen and (min-width: 400px) {
+  .vacancy_title {
+    margin: 0;
+    width: 400px;
+  }
+}
+.vacancy_location {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media screen and (min-width: 400px) {
+  .vacancy_location {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 232px;
+    flex: 1;
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 * {
@@ -1238,6 +1499,7 @@ html {
 }
 
 .action_button {
+  min-width: 160px;
   height: 48px;
   background-color: #3040c4;
   color: #fff;
@@ -1250,7 +1512,7 @@ html {
 }
 @media screen and (min-width: 400px) {
   .action_button {
-    width: 160px;
+    min-width: 160px;
     margin-bottom: 0;
   }
 }

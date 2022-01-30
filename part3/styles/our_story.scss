@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+.story {
+  padding: 0 60px;
+
+  &_block {
+    @include for-large-up {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.about {
+  @include for-large-up {
+    width: 420px;
+  }
+
+  &_block {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 40px;
+      height: 33px;
+      margin-right: 20px;
+    }
+
+    &-question {
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 600;
+      color: #111111;
+      margin: 0;
+    }
+  }
+  &_text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-left: 60px;
+  }
+}

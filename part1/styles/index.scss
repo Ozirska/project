@@ -11,6 +11,7 @@
 @import "audiences.scss";
 @import "audiences.scss";
 @import "feedback.scss";
+@import "hiring";
 * {
   box-sizing: border-box;
 }
@@ -123,6 +124,7 @@ html {
 }
 
 .action_button {
+  min-width: 160px;
   height: 48px;
   background-color: $button-color;
   color: #fff;
@@ -135,7 +137,7 @@ html {
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 
   @include for-large-up {
-    width: 160px;
+    min-width: 160px;
     margin-bottom: 0;
   }
 }

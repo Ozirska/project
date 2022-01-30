@@ -37,6 +37,7 @@
       line-height: 40px;
       letter-spacing: -0.36px;
       font-weight: 700;
+      margin: 0;
       margin-top: 17px;
     }
     &-description {
@@ -46,6 +47,7 @@
       margin-bottom: 34px;
     }
   }
+
   &-line {
     border-top: 1px solid #000;
     width: 150px;
@@ -53,5 +55,8 @@
     margin-right: auto;
     margin-top: 40px;
     opacity: 0.1;
+    @include for-large-up {
+      display: none;
+    }
   }
 }

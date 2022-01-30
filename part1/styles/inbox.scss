@@ -1,9 +1,11 @@
 @import "variables.scss";
+
 .decoration {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+
   @include for-large-up {
     margin-left: 180px;
     margin-right: 192px;
@@ -27,19 +29,19 @@
 }
 .caption-order {
   display: none;
+
   @include for-large-up {
     display: block;
   }
 }
 .inbox {
-  width: 100%;
   background-color: rgba(252, 240, 227, 0.4);
   margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 48px;
+
   @include for-large-up {
-    width: 1140px;
     padding-bottom: 99px;
     padding-top: 142px;
     display: flex;
@@ -64,6 +66,7 @@
       line-height: 40px;
       letter-spacing: -0.36px;
       margin-top: 18px;
+
       @include for-large-up {
         margin-top: 24px;
         font-size: 56px;
@@ -90,6 +93,7 @@
     padding-bottom: 28px;
     border-bottom: 2px solid #0185d0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05);
+
     @include for-large-up {
       margin-top: 44px;
       padding: 30px;
@@ -108,7 +112,6 @@
     }
     &_block {
       margin-top: 26px;
-
       display: flex;
 
       &-avatar {

@@ -4,6 +4,8 @@
 @import "response.scss";
 @import "how_works";
 @import "features.scss";
+@import "use_cases.scss";
+@import "our_story.scss";
 
 @import "footer.scss";
 
@@ -21,9 +23,11 @@ html {
   overflow-x: hidden;
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
   margin-top: 0;
-  z-index: -2;
   padding: 0;
   padding-bottom: 90px;
+  // margin: auto;
+  display: flex;
+  flex-direction: column;
 
   @include for-large-down {
     background: linear-gradient(
@@ -37,10 +41,34 @@ html {
 
   @include for-large-up {
     width: 1440px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 0;
     margin-top: 0;
+  }
+}
+
+.page {
+  &_line {
+    width: 80px;
+    border-bottom: 2px solid $text-color__primary-blue;
+    box-shadow: 0px 2px 0px #d1e1fe;
+    margin-top: 10px;
+    margin-bottom: 48px;
+
+    @include for-large-up {
+      margin-left: 120px;
+    }
+  }
+
+  &_title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 120px;
+
+    @include for-large-up {
+      margin-left: 160px;
+    }
   }
 }

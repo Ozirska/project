@@ -7,15 +7,14 @@
     position: relative;
     width: 1140px;
     margin: auto;
+    margin-top: 81px;
     display: flex;
-    // padding: 84px 25px 77px 126px;
     padding-bottom: 126px;
   }
   &_content {
     margin: 0;
-    padding-bottom: 0;
-    padding: 0 15px;
-    // margin: 35px 15px 33px 15px;
+    padding: 35px 15px 33px 15px;
+
     @include for-large-up {
       position: absolute;
       z-index: 1;
@@ -67,7 +66,6 @@
     &-image {
       @include for-large-down {
         width: 100%;
-        // margin-bottom: 36px;
       }
     }
   }

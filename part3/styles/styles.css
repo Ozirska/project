@@ -18,12 +18,13 @@
   .header_button {
     display: block;
     width: 180px;
-    height: 50px;
+    max-height: 50px;
     background-color: #1968fc;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     color: #fff;
+    border: none;
   }
 }
 
@@ -357,31 +358,6 @@
     padding: 0;
   }
 }
-.features_title {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 60px;
-  text-transform: uppercase;
-  margin: 0;
-  margin-top: 120px;
-}
-@media screen and (min-width: 1024px) {
-  .features_title {
-    margin-left: 160px;
-  }
-}
-.features_line {
-  width: 80px;
-  border-bottom: 2px solid #1968fc;
-  box-shadow: 0px 2px 0px #d1e1fe;
-  margin-top: 10px;
-  margin-bottom: 48px;
-}
-@media screen and (min-width: 1024px) {
-  .features_line {
-    margin-left: 120px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .features_offer {
     display: flex;
@@ -391,6 +367,11 @@
   position: absolute;
   top: 180px;
   right: -5px;
+}
+@media screen and (min-width: 1024px) {
+  .features_decor {
+    top: 300px;
+  }
 }
 
 .offer {
@@ -434,7 +415,7 @@
 @media screen and (min-width: 1024px) {
   .offer_down {
     height: 100px;
-    padding: 30px 30px;
+    padding: 40px 40px;
   }
 }
 .offer_down-text {
@@ -454,6 +435,45 @@
     margin-left: 74px;
   }
 }
+.story {
+  padding: 0 60px;
+}
+@media screen and (min-width: 1024px) {
+  .story_block {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    width: 420px;
+  }
+}
+.about_block {
+  display: flex;
+  align-items: center;
+}
+.about_block-img {
+  width: 40px;
+  height: 33px;
+  margin-right: 20px;
+}
+.about_block-question {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+.about_text {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+  margin-left: 60px;
+}
+
 .footer {
   height: 130px;
   margin-top: 60px;
@@ -466,12 +486,12 @@
 @media screen and (min-width: 1024px) {
   .footer {
     padding-left: 160px;
-    padding-bottom: 0;
+    padding-right: 160px;
   }
 }
 .footer_decor {
   position: absolute;
-  top: 70px;
+  bottom: 0px;
   right: 40px;
   width: 55px;
   height: 60px;
@@ -480,6 +500,7 @@
   .footer_decor {
     width: 90px;
     height: 100px;
+    right: 160px;
   }
 }
 
@@ -520,12 +541,13 @@
 }
 @media screen and (min-width: 1024px) {
   .footer_nav {
-    display: flex;
+    display: block;
   }
 }
 .footer_nav-list {
   list-style-type: none;
   display: flex;
+  margin: 0;
   margin-left: 70px;
 }
 .footer_nav-item {
@@ -552,9 +574,10 @@ html {
   overflow-x: hidden;
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
   margin-top: 0;
-  z-index: -2;
   padding: 0;
   padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 1023px) {
   .page {
@@ -564,11 +587,34 @@ html {
 @media screen and (min-width: 1024px) {
   .page {
     width: 1440px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 0;
     margin-top: 0;
+  }
+}
+
+.page_line {
+  width: 80px;
+  border-bottom: 2px solid #1968fc;
+  box-shadow: 0px 2px 0px #d1e1fe;
+  margin-top: 10px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .page_line {
+    margin-left: 120px;
+  }
+}
+.page_title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 120px;
+}
+@media screen and (min-width: 1024px) {
+  .page_title {
+    margin-left: 160px;
   }
 }
 

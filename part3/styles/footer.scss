@@ -11,12 +11,12 @@
 
   @include for-large-up {
     padding-left: 160px;
-    padding-bottom: 0;
+    padding-right: 160px;
   }
 
   &_decor {
     position: absolute;
-    top: 70px;
+    bottom: 0px;
     right: 40px;
     width: 55px;
     height: 60px;
@@ -24,6 +24,7 @@
     @include for-large-up {
       width: 90px;
       height: 100px;
+      right: 160px;
     }
   }
 }
@@ -67,12 +68,13 @@
   display: none;
 
   @include for-large-up {
-    display: flex;
+    display: block;
   }
 
   &-list {
     list-style-type: none;
     display: flex;
+    margin: 0;
     margin-left: 70px;
   }
 
