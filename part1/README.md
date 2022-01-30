@@ -1,13 +1,12 @@
-Site link: file:///C:/Users/marin/Desktop/project/part1/index.html#
+@@ -1,8 +1,8 @@
 
-Layout supports mobile (up-to-400) and desktop (up-to-1400) versions
+# Project 1
 
-The tech stack is:
-HTML5
-CSS3
-Flexbox
-Sass (Scss)
-BEM methodology
+### [Site link](file:///C:/Users/marin/Desktop/project/part1/index.html#)
 
-Author:
+Site supports mobile (up-to-400) and desktop (up-to-1360) versions
+Layout supports mobile (up-to-400) and desktop (up-to-1360) versions
+
+### The tech stack is:
+
 Marina Ozirska
