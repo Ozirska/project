@@ -2,18 +2,29 @@
 
 .story {
   padding: 0 60px;
+  padding-top: 60px;
+
+  @include for-large-up {
+    padding: 0 160px;
+    padding-top: 120px;
+  }
 
   &_block {
+    margin-top: 50px;
+
     @include for-large-up {
       display: flex;
       justify-content: space-between;
+      margin-top: 60px;
     }
   }
 }
 
 .about {
+  margin-bottom: 40px;
   @include for-large-up {
-    width: 420px;
+    width: 480px;
+    margin-bottom: 0;
   }
 
   &_block {
@@ -29,7 +40,7 @@
     &-question {
       font-size: 20px;
       line-height: 40px;
-      font-weight: 600;
+      font-weight: $rich-font;
       color: #111111;
       margin: 0;
     }
@@ -40,5 +51,6 @@
     font-weight: 400;
     color: #000;
     margin-left: 60px;
+    width: 460px;
   }
 }

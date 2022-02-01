@@ -4,6 +4,8 @@ $text-color__blue: rgba(25, 103, 250, 1);
 $text-color__primary-blue: rgba(25, 104, 252, 1);
 $button-color__blue: rgba(25, 104, 252, 1);
 $button-color__white: #fff;
+$rich-font: 600;
+$max-font: 700;
 
 @mixin for-large-up {
   @media screen and (min-width: 1024px) {

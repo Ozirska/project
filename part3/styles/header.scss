@@ -1,16 +1,18 @@
 @import "variables.scss";
 
 .header {
-  width: 100%;
-  display: flex;
-  margin-left: 80px;
-  margin-top: 40px;
+  padding-left: 80px;
+  padding-top: 40px;
 
   @include for-large-up {
     margin: 0;
-    margin-top: 30px;
     padding: 0 160px;
+    padding-top: 30px;
   }
+}
+
+.header {
+  display: flex;
 
   &_button {
     display: none;
@@ -18,11 +20,11 @@
     @include for-large-up {
       display: block;
       width: 180px;
-      max-height: 50px;
+      height: 50px;
       background-color: $button-color__blue;
       text-transform: uppercase;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: $rich-font;
       color: $text-color__white;
       border: none;
     }
@@ -33,7 +35,6 @@
   display: flex;
   align-items: center;
   height: 50px;
-  margin-right: 220px;
 
   &_img {
     width: 50px;
@@ -44,7 +45,7 @@
 
   &_text {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: $rich-font;
     line-height: 30px;
     color: $text-color__primary-blue;
     margin: 0;
@@ -57,7 +58,7 @@
   @include for-large-up {
     display: block;
 
-    // margin-left: auto;
+    margin-left: auto;
   }
   &-list {
     margin: 0;

@@ -5,8 +5,9 @@
 @import "how_works";
 @import "features.scss";
 @import "use_cases.scss";
+@import "can_build.scss";
+@import "help_to_user.scss";
 @import "our_story.scss";
-
 @import "footer.scss";
 
 * {
@@ -25,7 +26,6 @@ html {
   margin-top: 0;
   padding: 0;
   padding-bottom: 90px;
-  // margin: auto;
   display: flex;
   flex-direction: column;
 
@@ -40,7 +40,7 @@ html {
   }
 
   @include for-large-up {
-    width: 1440px;
+    width: 1400px;
     padding-bottom: 0;
     margin-top: 0;
   }
@@ -48,27 +48,25 @@ html {
 
 .page {
   &_line {
+    position: absolute;
+    top: 70px;
+    left: 0;
     width: 80px;
     border-bottom: 2px solid $text-color__primary-blue;
     box-shadow: 0px 2px 0px #d1e1fe;
-    margin-top: 10px;
-    margin-bottom: 48px;
 
     @include for-large-up {
-      margin-left: 120px;
+      top: 70px;
+      left: -40px;
     }
   }
 
   &_title {
+    position: relative;
     font-size: 30px;
     font-weight: 400;
     line-height: 60px;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 120px;
-
-    @include for-large-up {
-      margin-left: 160px;
-    }
   }
 }

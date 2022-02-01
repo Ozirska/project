@@ -1,12 +1,23 @@
 @import "variables.scss";
 
 .response {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 50px 50px 0 50px;
 
   @include for-large-up {
     padding: 0 160px;
+    margin-top: 160px;
+  }
+}
+
+.response {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 630px;
+
+  @include for-large-up {
+    height: max-content;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -15,13 +26,14 @@
     width: 540px;
     height: 280px;
     background-color: #fff;
-    margin: 0;
-    margin-top: 50px;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
     padding: 40px 40px;
     position: relative;
 
-    @include for-large-up {
-      margin-top: 160px;
+    &-first {
+      @include for-large-up {
+        margin-right: 40px;
+      }
     }
   }
 
@@ -48,13 +60,13 @@
   &_name {
     font-size: 18px;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: $rich-font;
     margin: 0;
   }
   &_position {
     font-size: 14px;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: $rich-font;
     color: $text-color__blue;
     margin: 0;
   }

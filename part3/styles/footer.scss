@@ -1,18 +1,20 @@
 @import "variables.scss";
 
 .footer {
-  height: 130px;
   margin-top: 60px;
+  @include for-large-up {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+.footer {
+  height: 130px;
   padding-left: 40px;
   position: relative;
   display: flex;
   align-items: center;
   background: #fbfbfb;
-
-  @include for-large-up {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
 
   &_decor {
     position: absolute;
@@ -45,7 +47,7 @@
 
   &_text {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: $rich-font;
     line-height: 20px;
     color: $text-color__primary-blue;
     margin: 0;
@@ -82,7 +84,7 @@
     width: 120px;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 600;
+    font-weight: $rich-font;
     color: #000;
   }
 }
